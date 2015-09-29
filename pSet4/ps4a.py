@@ -286,6 +286,7 @@ def playGame(wordList):
         elif contValue=='e':
             continuePlaying=False
         elif contValue=='n':
+            
             hand=dealHand(n)
             playHand(hand, wordList, n)
             numberHands+=1
