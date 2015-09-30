@@ -140,6 +140,9 @@ def playGame(wordList):
             continuePlaying=False
         elif contValue=='n':
             soloOr=raw_input("Enter u to have yourself play, c to have the computer play: ")
+            while soloOr!='u' and soloOr!='c':
+                print 'Invalid command.\n'
+                soloOr=raw_input("Enter u to have yourself play, c to have the computer play: ")
             if soloOr=='u':
                 hand=dealHand(n)
                 playHand(hand, wordList, n)
